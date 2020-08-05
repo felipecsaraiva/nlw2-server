@@ -1,0 +1,59 @@
+{
+  "name": "nlw-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "knes:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.2",
+    "path": "^0.12.7",
+    "sqlite3": "^5.0.0",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.27"
+  },
+  "resolutions": {
+    "debug": "4.1.1",
+    "qs": "6.7.0",
+    "safe-buffer": "5.1.2",
+    "http-errors": "1.7.3",
+    "inherits": "2.0.4",
+    "ms": "2.1.2",
+    "mkdirp": "0.5.5",
+    "uuid": "7.0.3",
+    "braces": "3.0.2",
+    "define-property": "0.2.5",
+    "extend-shallow": "3.0.2",
+    "kind-of": "6.0.3",
+    "fill-range": "7.0.1",
+    "isobject": "3.0.1",
+    "is-extendable": "1.0.1",
+    "is-number": "7.0.0",
+    "to-regex-range": "5.0.1",
+    "is-descriptor": "1.0.2",
+    "is-accessor-descriptor": "1.0.0",
+    "is-data-descriptor": "1.0.0",
+    "source-map": "0.6.1",
+    "has-value": "1.0.0",
+    "has-values": "1.0.0",
+    "nopt": "4.0.3",
+    "semver": "5.7.1",
+    "tar": "4.4.13",
+    "string-width": "2.1.1",
+    "strip-ansi": "4.0.0",
+    "is-fullwidth-code-point": "2.0.0",
+    "ansi-regex": "3.0.0",
+    "extsprintf": "1.4.0",
+    "strip-bom": "3.0.0"
+  }
+}

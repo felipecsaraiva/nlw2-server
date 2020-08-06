@@ -12,7 +12,7 @@
 /build
 
 # misc
-/src/database
+/src/database/database.sqlite
 .DS_Store
 .env.local
 .env.development.local
